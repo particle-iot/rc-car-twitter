@@ -22,8 +22,9 @@ stream.on('tweet', function(json) {
 
     for(var name in commands) {
         if (text.indexOf(name) >= 0) {
-            text = text.substr(name.length);
-            console.log("running command " + name);
+            var start = text.indexOf(name) + name.length + 1;
+            text = text.substr(start);
+            console.log("running command " + name + " with args " + text);
             commands[name](text);
         }
     }
