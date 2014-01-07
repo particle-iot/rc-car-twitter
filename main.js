@@ -12,6 +12,7 @@ var commands = {
     "back": controller.backFn,
     "left": controller.leftFn,
     "right": controller.rightFn,
+    "calibrate": controller.calibrateFn
 }
 
 
