@@ -4,7 +4,7 @@ var Twit = require('twit');
 
 //create stream
 var T = new Twit(settings.twitter);
-var stream = T.stream('user', { track: "middleca_"});
+var stream = T.stream('user', { track: "settings.twitter_user"});
 
 
 var commands = {
