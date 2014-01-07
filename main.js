@@ -1,4 +1,5 @@
 var settings = require('./settings.js');
+var controller = require('./lib/controller.js');
 var Twit = require('twit');
 
 //create stream
